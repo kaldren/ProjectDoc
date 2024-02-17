@@ -24,12 +24,28 @@
                 SemanticProperties.HeadingLevel="Level2"
                 SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
-            <Button
-                x:Name="CounterBtn"
-                Text="Click me" 
-                SemanticProperties.Hint="Counts the number of times you click"
-                Clicked="OnCounterClicked"
-                HorizontalOptions="Fill" />
+            <HorizontalStackLayout HorizontalOptions="Center">
+                <Button x:Name="LoginButton"
+                        Text="Log in"
+                        SemanticProperties.Hint="Log in"
+                        Clicked="OnLoginButtonClicked"
+                        HorizontalOptions="Center"
+                        Margin="8,0,8,0" />
+
+                <Button x:Name="LogoutButton"
+                        Text="Log out"
+                        SemanticProperties.Hint="Log out"
+                        Clicked="OnLogoutButtonClicked"
+                        HorizontalOptions="Center"
+                        Margin="8,0,8,0" />
+            </HorizontalStackLayout>
+            
+            <Button x:Name="GetWeatherForecastButton"
+                    Text="Get Weather Forecast"
+                    SemanticProperties.Hint="Get weather forecast data"
+                    Clicked="OnGetWeatherForecastButtonClicked"
+                    HorizontalOptions="Center"
+                    IsEnabled="{Binding IsLoggedIn}"/>
         </VerticalStackLayout>
     </ScrollView>
 
