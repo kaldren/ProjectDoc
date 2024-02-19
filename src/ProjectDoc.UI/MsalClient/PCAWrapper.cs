@@ -17,6 +17,7 @@ public class PCAWrapper
     internal const string TenantId = "06209c3c-8ca6-4b1e-96a1-f2458effd850";
     public static string[] Scopes = { "api://02984b75-4baa-4700-b54d-1854a0fdbfe5/access_as_user" };
 
+
     // private constructor for singleton
     private PCAWrapper()
     {

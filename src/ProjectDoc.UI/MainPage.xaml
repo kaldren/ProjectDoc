@@ -39,13 +39,13 @@
                         HorizontalOptions="Center"
                         Margin="8,0,8,0" />
             </HorizontalStackLayout>
-            
+
             <Button x:Name="GetWeatherForecastButton"
-                    Text="Get Weather Forecast"
-                    SemanticProperties.Hint="Get weather forecast data"
-                    Clicked="OnGetWeatherForecastButtonClicked"
-                    HorizontalOptions="Center"
-                    IsEnabled="{Binding IsLoggedIn}"/>
+					Text="Get Weather Forecast"
+					SemanticProperties.Hint="Get weather forecast data"
+					Clicked="OnGetWeatherForecastButtonClicked"
+					HorizontalOptions="Center"
+					IsEnabled="{Binding IsLoggedIn}"/>
         </VerticalStackLayout>
     </ScrollView>
 

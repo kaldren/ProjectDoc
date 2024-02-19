@@ -98,7 +98,7 @@ public partial class MainPage : ContentPage
             var client = new HttpClient();
 
             // Create the request.
-            var message = new HttpRequestMessage(HttpMethod.Get, "https://projectdocapi.azurewebsites.net/weatherforecast");
+            var message = new HttpRequestMessage(HttpMethod.Get, "https://projectdocapi20240219082131.azurewebsites.net/weatherforecast");
 
             // Add the Authorization Bearer header.
             message.Headers.Add("Authorization", $"Bearer {accessToken}");
@@ -127,4 +127,3 @@ public partial class MainPage : ContentPage
         return Task.CompletedTask;
     }
 }
-
