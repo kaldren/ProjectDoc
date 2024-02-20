@@ -1,4 +1,4 @@
-namespace ProjectDoc.UI.Pages;
+namespace ProjectDoc.UI.Views;
 
 public partial class FindDoctor : ContentPage
 {
