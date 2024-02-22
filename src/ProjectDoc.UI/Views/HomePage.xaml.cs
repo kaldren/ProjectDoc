@@ -1,9 +1,9 @@
 ﻿using Microsoft.Identity.Client;
 using ProjectDoc.UI.MsalClient;
 
-namespace ProjectDoc.UI;
+namespace ProjectDoc.UI.Views;
 
-public partial class MainPage : ContentPage
+public partial class HomePage : ContentPage
 {
     private string _accessToken = string.Empty;
 
@@ -19,7 +19,7 @@ public partial class MainPage : ContentPage
         }
     }
 
-    public MainPage()
+    public HomePage()
     {
         BindingContext = this;
         InitializeComponent();
