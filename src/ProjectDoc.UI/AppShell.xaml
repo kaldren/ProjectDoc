@@ -11,11 +11,25 @@
         <ShellContent
             Title="Home"
             ContentTemplate="{DataTemplate views:HomePage}"
+            Icon="home.png"
             Route="HomePage" />
 
         <ShellContent
-            Title="Find Doctor"
+            Title="Doctors"
             ContentTemplate="{DataTemplate views:FindDoctor}"
+            Icon="docs.png"
+            Route="MainPage" />
+
+        <ShellContent
+            Title="Appointments"
+            ContentTemplate="{DataTemplate views:FindDoctor}"
+            Icon="calendar.png"
+            Route="MainPage" />
+
+        <ShellContent
+            Title="Profile"
+            ContentTemplate="{DataTemplate views:FindDoctor}"
+            Icon="profile.png"
             Route="MainPage" />
 
     </TabBar>
