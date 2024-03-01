@@ -2,12 +2,51 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectDoc.UI.Views.HomePage"
-             Title="HomePage">
-
+             Title="">
     <ScrollView>
+
         <VerticalStackLayout
-            Padding="30,0"
-            Spacing="25">
+            Padding="0,0"
+            >
+
+            <StackLayout Orientation="Horizontal" BackgroundColor="#d83772"  Margin="0" Padding="10">
+                <Image
+                    Source="dotnet_bot.png"
+                    HeightRequest="50"
+                    Aspect="AspectFit"
+                SemanticProperties.Description="profile photo" />
+
+                <VerticalStackLayout>
+                    <Label
+                        Text="Welcome"
+                        HorizontalOptions="Start"
+                        FontSize="Body"
+                        FontAttributes="Bold"
+                        TextColor="White"
+                        Style="{StaticResource Headline}"
+                        SemanticProperties.HeadingLevel="Level1" />
+
+                    <Label
+                        Text="Kaloyan Drenski"
+                        HorizontalOptions="Start"
+                        FontSize="Body"
+                        TextColor="White"
+                        Style="{StaticResource Headline}"
+                        SemanticProperties.HeadingLevel="Level1" />
+                </VerticalStackLayout>
+
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#d83772" Margin="0" Padding="20">
+                <Border StrokeShape="RoundRectangle 5">
+                    <Entry 
+                        x:Name="entry"
+                        Placeholder="Search doctor"
+                        Background="White"
+                    />
+                </Border>
+            </StackLayout>
+
             <Image
                 Source="dotnet_bot.png"
                 HeightRequest="185"
