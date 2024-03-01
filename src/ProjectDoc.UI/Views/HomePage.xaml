@@ -47,22 +47,50 @@
                 </Border>
             </StackLayout>
 
+            <FlexLayout 
+                Direction="Row"
+                JustifyContent="SpaceBetween"
+                AlignItems="Center" Margin="0 20"
+                HeightRequest="50"
+                >
+                    <Label Text="Categories"
+                       HorizontalOptions="Start"
+                       FontSize="Body"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Style="{StaticResource Headline}"
+                       SemanticProperties.HeadingLevel="Level1" />
+
+                    <Label Text="Show All"
+                       HorizontalOptions="End"
+                       FontSize="Body"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Style="{StaticResource Headline}"
+                       SemanticProperties.HeadingLevel="Level1" />
+            </FlexLayout>
+
+
+            <FlexLayout 
+                Wrap="Wrap" 
+                AlignContent="Center" 
+                AlignItems="Start"
+                JustifyContent="Start"
+                Direction="Row">
+                <BoxView BackgroundColor="Red" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5"/>
+                <BoxView BackgroundColor="Green" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5"/>
+                <BoxView BackgroundColor="Blue" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5"/>
+                <BoxView BackgroundColor="Red" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5"/>
+                <BoxView BackgroundColor="Green" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5"/>
+                <BoxView BackgroundColor="Blue" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5"/>
+            </FlexLayout>
+
             <Image
                 Source="dotnet_bot.png"
                 HeightRequest="185"
                 Aspect="AspectFit"
                 SemanticProperties.Description="dot net bot in a race car number eight" />
 
-            <Label
-                Text="Hello, World!"
-                Style="{StaticResource Headline}"
-                SemanticProperties.HeadingLevel="Level1" />
-
-            <Label
-                Text="Welcome to &#10;.NET Multi-platform App UI"
-                Style="{StaticResource SubHeadline}"
-                SemanticProperties.HeadingLevel="Level2"
-                SemanticProperties.Description="Welcome to dot net Multi platform App U I" />
 
             <HorizontalStackLayout HorizontalOptions="Center">
                 <Button x:Name="LoginButton"
