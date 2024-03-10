@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ProjectDoc.UI.Views.HomePage"
              Title="">
-    <ScrollView>
+    <ScrollView BackgroundColor="#f4f4f4" >
 
         <VerticalStackLayout
             Padding="0,0"
@@ -50,7 +50,7 @@
             <FlexLayout 
                 Direction="Row"
                 JustifyContent="SpaceBetween"
-                AlignItems="Center" Margin="0 20"
+                
                 HeightRequest="50"
                 >
                     <Label Text="Categories"
@@ -77,12 +77,41 @@
                 AlignItems="Start"
                 JustifyContent="Start"
                 Direction="Row">
-                <BoxView BackgroundColor="Red" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5"/>
-                <BoxView BackgroundColor="Green" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5"/>
-                <BoxView BackgroundColor="Blue" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5"/>
-                <BoxView BackgroundColor="Red" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5"/>
-                <BoxView BackgroundColor="Green" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5"/>
-                <BoxView BackgroundColor="Blue" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5"/>
+                <Button BackgroundColor="White" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5">
+                    <Button.ImageSource>
+                        <FileImageSource File="gp.svg" />
+                    </Button.ImageSource>
+                </Button>
+                
+                <Button BackgroundColor="White" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5">
+                    <Button.ImageSource>
+                        <FileImageSource File="dentist.svg"/>
+                    </Button.ImageSource>
+                </Button>
+                
+                <Button BackgroundColor="White" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5">
+                    <Button.ImageSource>
+                        <FileImageSource File="pediatrician.svg"/>
+                    </Button.ImageSource>
+                </Button>
+
+                <Button BackgroundColor="White" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5">
+                    <Button.ImageSource>
+                        <FileImageSource File="gynecologist.svg"/>
+                    </Button.ImageSource>
+                </Button>
+
+                <Button BackgroundColor="White" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5">
+                    <Button.ImageSource>
+                        <FileImageSource File="cardiologist.svg"/>
+                    </Button.ImageSource>
+                </Button>
+                
+                <Button BackgroundColor="White" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5">
+                    <Button.ImageSource>
+                        <FileImageSource File="dermatologist.svg"/>
+                    </Button.ImageSource>
+                </Button>
             </FlexLayout>
 
             <Image
