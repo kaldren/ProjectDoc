@@ -7,7 +7,7 @@
     Shell.FlyoutBehavior="Disabled"
     Title="ProjectDoc.UI">
 
-    <TabBar>
+    <TabBar Route="main">
         <ShellContent
             Title="Home"
             ContentTemplate="{DataTemplate views:HomePage}"
@@ -18,7 +18,7 @@
             Title="Doctors"
             ContentTemplate="{DataTemplate views:FindDoctor}"
             Icon="docs.png"
-            Route="MainPage" />
+            Route="docs" />
 
         <ShellContent
             Title="Appointments"

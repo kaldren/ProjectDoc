@@ -1,8 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:viewModels="clr-namespace:ProjectDoc.UI.ViewModels"
              x:Class="ProjectDoc.UI.Views.HomePage"
              Title="">
+    <ContentPage.BindingContext>
+        <viewModels:GpViewModel />
+    </ContentPage.BindingContext>
     <ScrollView BackgroundColor="#f4f4f4" >
 
         <VerticalStackLayout
@@ -70,14 +74,13 @@
                        SemanticProperties.HeadingLevel="Level1" />
             </FlexLayout>
 
-
             <FlexLayout 
                 Wrap="Wrap" 
                 AlignContent="Center" 
                 AlignItems="Start"
                 JustifyContent="Start"
                 Direction="Row">
-                <Button BackgroundColor="White" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5">
+                <Button BackgroundColor="White" WidthRequest="100" HeightRequest="100" FlexLayout.Basis="33%" Margin="5" Command="{Binding OpenGpMenuCommand}">
                     <Button.ImageSource>
                         <FileImageSource File="gp.svg" />
                     </Button.ImageSource>
@@ -114,14 +117,7 @@
                 </Button>
             </FlexLayout>
 
-            <Image
-                Source="dotnet_bot.png"
-                HeightRequest="185"
-                Aspect="AspectFit"
-                SemanticProperties.Description="dot net bot in a race car number eight" />
-
-
-            <HorizontalStackLayout HorizontalOptions="Center">
+            <!--<HorizontalStackLayout HorizontalOptions="Center">
                 <Button x:Name="LoginButton"
                         Text="Log in"
                         SemanticProperties.Hint="Log in"
@@ -135,14 +131,14 @@
                         Clicked="OnLogoutButtonClicked"
                         HorizontalOptions="Center"
                         Margin="8,0,8,0" />
-            </HorizontalStackLayout>
+            </HorizontalStackLayout>-->
 
-            <Button x:Name="GetWeatherForecastButton"
+            <!--<Button x:Name="GetWeatherForecastButton"
 					Text="Get Weather Forecast"
 					SemanticProperties.Hint="Get weather forecast data"
 					Clicked="OnGetWeatherForecastButtonClicked"
 					HorizontalOptions="Center"
-					IsEnabled="{Binding IsLoggedIn}"/>
+					IsEnabled="{Binding IsLoggedIn}"/>-->
         </VerticalStackLayout>
     </ScrollView>
 
