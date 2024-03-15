@@ -12,5 +12,5 @@ class GpViewModel
         OpenGpMenuCommand = new AsyncRelayCommand(OpenGpMenu);
     }
 
-    async Task OpenGpMenu() => await Shell.Current.GoToAsync("//main/docs");
+    async Task OpenGpMenu() => await Shell.Current.GoToAsync("//main/docs?type=gp");
 }
